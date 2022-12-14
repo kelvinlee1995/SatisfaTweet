@@ -7,13 +7,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class CollectData {
     //Send request to API with JSON result
-    public String sendGET() throws IOException {
+    public String getJSON() throws IOException {
         URL obj = new URL("https://api.twitter.com/2/tweets/search/recent?" +
                 "query=WorldCup2022&max_results=100");
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -33,21 +31,28 @@ public class CollectData {
         return null;
     }
 
-    //Create JSON file on the desktop with data
-    public void createJSON() throws IOException {
-        FileWriter file = new FileWriter("C:\\Users\\kelvi\\Desktop\\data.json");
-        file.write(sendGET());
+    //Create JSON file on the desktop with data with only "Text" field
+    public void createJSON(String src) throws IOException {
+        FileWriter file = new FileWriter("C:\\Users\\kelvi\\Desktop\\twitter.json");
+        file.write(src);
         file.close();
     }
 
-    public void jsonObject(String src){
+    public void createTextField(String src) throws IOException {
+        FileWriter file = new FileWriter("C:\\Users\\kelvi\\Desktop\\textfield.txt");
+        file.write(src);
+        file.close();
+    }
+
+    public String jsonObject(String src) {
         JSONObject obj = new JSONObject(src);
         JSONArray arr = obj.getJSONArray("data");
+        String arrString = null;
         for (int i = 0; i < arr.length(); i++){
             String text = arr.getJSONObject(i).getString("text");
-            text.replace("\n", "");
-            System.out.println(text);
-            System.out.println("-------------------------------------------------------------------------------------");
+            text.replace("\n", " ");
+            arrString+=text;
         }
+        return arrString;
     }
 }
