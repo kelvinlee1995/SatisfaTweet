@@ -28,6 +28,9 @@ Satisfaction search from Tweeter about World Cup 2022
  - While trying to use Kafka, Spark and Pyspark to query the Twitter API streams we faced some difficulties.
     We launched several Web SSH windows to run our Zookeeper server, our Kafka Producer, our Kafka Consumers 
     and finally a window for Pyspark to launch our main.py file.
+  - WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0-1, groupId=spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+  - We tried to search on different sites but none of the solutions worked.
+ - 
  
 
 ## Sources
