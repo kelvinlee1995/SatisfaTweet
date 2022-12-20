@@ -17,4 +17,4 @@ Difficulties :
 - We tried to use Apache Kafka to get data.
   - We configured Producer and Consumer to gather informations.
 - We tried to use Spark to analyse results
-- We tried to use PySpark to transfer to Spark the data collected through our python script
+  - We tried to use PySpark to transfer to Spark the data collected through our python script
