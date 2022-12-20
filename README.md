@@ -30,7 +30,12 @@ Satisfaction search from Tweeter about World Cup 2022
     and finally a window for Pyspark to launch our main.py file.
   - WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0-1, groupId=spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
   - We tried to search on different sites but none of the solutions worked.
- - 
+ - Thinking it might be the VM's fault we tried it on our local machine
+  - We did everything as instructed but we faced a problem at the Launching step.
+    - <img width="960" alt="image" src="https://user-images.githubusercontent.com/71258875/208780378-f74c0db8-5b9f-4012-a2ac-b53d9730a6fa.png">
+  - We can see that there is a problem with the Windows version I'm using.
+  - We couldn't move any further.
+  
  
 
 ## Sources
