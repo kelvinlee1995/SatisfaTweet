@@ -38,10 +38,6 @@ Satisfaction search from Tweeter about World Cup 2022
   - We can see that there is a problem with the Windows version I'm using.
   - We couldn't move any further.
   
-### Improvements
-- We can try more complex queries on Hive
-- 
-
 ## Sources
 
 - https://github.com/cloudera/cdh-twitter-example
