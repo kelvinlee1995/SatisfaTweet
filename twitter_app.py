@@ -26,12 +26,11 @@ def clean_tweet(tweet):
 
 stopwords = ["for", "on", "an", "a", "of", "and", "in", "the", "to", "from", "rt"]
 client = tweepy.Client(
-    bearer_token='AAAAAAAAAAAAAAAAAAAAALQwkQEAAAAAQ0FEW7l%2F8RGbSWbYx1TEtNTv%2FIc'
-                 '%3D8raS8bikcWnpCFnP3EgEphW0EKBqmD4jZup6Jm0KFPA61QeV1B',
-    consumer_key='8IvMwGT5WTnjEpWlvsKuiShGb',
-    consumer_secret='CTzsMnWiETyg45a5GFLazCtY2xWgXYwdI4FHhzHPnJ2a9fiePD',
-    access_token='371969544-ZgkfiSaxVP70BTO2y8dh7UFuzosVOeDS1Sq4813Y',
-    access_token_secret='frWmFQLm3sIteJOPXMVpK8TJkoDeWjgHbC78ZREgzsYJb')
+    bearer_token='your key',
+    consumer_key='your key',
+    consumer_secret='your secret',
+    access_token='your key',
+    access_token_secret='your secret')
 
 data = []
 lst_lang = ['am', 'ar', 'bg', 'bn', 'bo', 'ca', 'ckb', 'cs', 'cy', 'da', 'de', ' dv', ' el', ' en', ' es', 'et', 'eu',
