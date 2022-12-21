@@ -2,7 +2,7 @@
 Satisfaction search from Tweeter about World Cup 2022
 
 ## Prerequisite :
-- Cloudera HDP Sandbox 2.6.5 (VM)
+- Hortonworks HDP Sandbox 2.6.5 (VM)
 - Python 3
 - Twitter developper account (Elevated)
 
@@ -18,6 +18,8 @@ Satisfaction search from Tweeter about World Cup 2022
   - We configured Producer and Consumer to gather informations.
 - We tried to use Spark to analyse results
   - We tried to use PySpark to transfer to Spark the data collected through our python script
+- Twitter have 2 versions of API, documentation and features are different
+  
 ### Troubles
 - When launching : | flume-ng agent --conf ./conf/ -f conf/flume_logs.conf Dflume.root.logger=DEBUG,console -n TwitterAgent |
   We had an error... from what we found it was due to a .jar file beeing obsolete.
@@ -28,7 +30,7 @@ Satisfaction search from Tweeter about World Cup 2022
  - While trying to use Kafka, Spark and Pyspark to query the Twitter API streams we faced some difficulties.
     We launched several Web SSH windows to run our Zookeeper server, our Kafka Producer, our Kafka Consumers 
     and finally a window for Pyspark to launch our main.py file.
-  - WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0-1, groupId=spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+   - WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0-1, groupId=spark-kafka-source-75885867-c7ae-4096-a8f9-34f8374feb11-1761795238-driver-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
   - We tried to search on different sites but none of the solutions worked.
  - Thinking it might be the VM's fault we tried it on our local machine
   - We did everything as instructed but we faced a problem at the Launching step.
@@ -36,7 +38,9 @@ Satisfaction search from Tweeter about World Cup 2022
   - We can see that there is a problem with the Windows version I'm using.
   - We couldn't move any further.
   
- 
+### Improvements
+- We can try more complex queries on Hive
+- 
 
 ## Sources
 
